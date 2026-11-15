@@ -11,6 +11,14 @@ cask "querydock" do
 
   app "QueryDock.app"
 
+  # QueryDock is not yet signed/notarized with an Apple Developer ID, so
+  # Gatekeeper would block the first launch. Clear the quarantine flag
+  # Homebrew sets on download (same as the curl installer does).
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/QueryDock.app"]
+  end
+
   zap trash: [
     "~/Library/Application Support/com.querydock.client",
     "~/Library/Caches/com.querydock.client",
