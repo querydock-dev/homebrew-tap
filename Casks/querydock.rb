@@ -8,6 +8,7 @@ cask "querydock" do
   homepage "https://github.com/Novus-Lab-Dev/querydock-releases"
 
   auto_updates true
+  depends_on :macos
 
   app "QueryDock.app"
 
@@ -23,8 +24,12 @@ cask "querydock" do
 
   zap trash: [
     "~/Library/Application Support/com.querydock.client",
+    "~/Library/Application Support/com.querydock.desktop",
+    "~/Library/Application Support/com.tableplusrs.desktop",
     "~/Library/Caches/com.querydock.client",
+    "~/Library/HTTPStorages/com.querydock.client",
     "~/Library/Preferences/com.querydock.client.plist",
     "~/Library/Saved Application State/com.querydock.client.savedState",
+    "~/Library/WebKit/com.querydock.client",
   ]
 end
