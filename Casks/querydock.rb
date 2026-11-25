@@ -1,6 +1,6 @@
 cask "querydock" do
-  version "1.0.1"
-  sha256 "9ebc94bf924943c9123c57c6f005ed3da8bc40e2626df76db9bb5aeaf09caaed"
+  version "1.0.2"
+  sha256 "a2d5bdefd32c9139daf8744ecfe0f8163fb392cbc207baa3c2f20d24ad7d360d"
 
   url "https://github.com/querydock-dev/querydock-releases/releases/download/v#{version}/QueryDock_#{version}_universal.dmg"
   name "QueryDock"
