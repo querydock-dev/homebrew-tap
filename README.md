@@ -1,13 +1,13 @@
-# Novus Lab Homebrew Tap
+# QueryDock Homebrew Tap
 
-Official Homebrew tap for [QueryDock](https://github.com/Novus-Lab-Dev/querydock-releases) and Novus Lab applications.
+Official Homebrew tap for [QueryDock](https://github.com/querydock-dev/querydock-releases).
 
 ## Installation
 
 Add this tap to Homebrew:
 
 ```bash
-brew tap Novus-Lab-Dev/tap
+brew tap querydock-dev/tap
 ```
 
 ### Install QueryDock
@@ -19,7 +19,7 @@ brew install --cask querydock
 Or in a single command:
 
 ```bash
-brew install --cask Novus-Lab-Dev/tap/querydock
+brew install --cask querydock-dev/tap/querydock
 ```
 
 ## Updating
